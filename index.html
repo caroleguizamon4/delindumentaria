@@ -15,18 +15,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container2">
-    <nav class="navbar bg-light" style="background-color: #e3f2fd;">
+     <nav class="navbar bg-light" style="background-color: #e3f2fd;">
   <!-- Navbar content -->
      <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./Img/logodel.png" alt="Logo" width="80" height="80" class="d-inline-block aling-text-center">
             <p class="h1 d-inline-block aling-text-center">Del INDUMENTARIA</p> 
-          <ul class="h5 nav justify-content-end">
-            <li class="nav-item" >
-              <a class="nav-link active" aria-current="page" href="#"> 
-                <img src="./Img/home.png" alt="Home" width="30px">               
-              </a>
+          <ul class="h5 nav justify-content-end aling-text-center">
+            <li class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                  </svg>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Productos</a>
@@ -42,7 +41,7 @@
               <a class="nav-link" href="#">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Nosotros</a>
+              <a class="nav-link" href="#">Nosotros</a>
             </li>
           </ul>  
         </div>
@@ -90,7 +89,7 @@
   <br><br>
 
   <!-- Productos -->
-  <div class="container">
+  <div class="container-fluid">
    <div class="text-center mb-4">
     <h3 class="section-title px-5"><span class="px-2">PRODUCTOS</span></h3>
   </div>
@@ -113,8 +112,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/1SGdPDq" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                   <div class="form-floating aling-bottom">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>1</option>
+                      <option value="1">2</option>
+                      <option value="2">3</option>
+                      <option value="3">4</option>
+                    </select>
+                    <label for="floatingSelect"><h6>Talle</h6></label>
+                  </div>
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>Negro</option>
+                      <option value="1">Rojo</option>
+                      <option value="2">Gris</option>
+                      <option value="3">Verde</option>
+                    </select>
+                    <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                        <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                      </svg></label>
+                </div>
+                <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                  </svg></a>
+                <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -131,8 +152,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -149,8 +192,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -167,8 +232,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -185,8 +272,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -203,8 +312,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -221,8 +352,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -239,8 +392,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -264,8 +439,30 @@
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                        <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                        <div class="form-floating aling-bottom">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>1</option>
+                              <option value="1">2</option>
+                              <option value="2">3</option>
+                              <option value="3">4</option>
+                            </select>
+                            <label for="floatingSelect"><h6>Talle</h6></label>
+                          </div>
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Negro</option>
+                              <option value="1">Rojo</option>
+                              <option value="2">Gris</option>
+                              <option value="3">Verde</option>
+                            </select>
+                            <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                                <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                              </svg></label>
+                        </div>
+                        <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                          </svg></a>
+                        <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                     </div>
                 </div>
         </div>
@@ -282,8 +479,30 @@
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                        <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                        <div class="form-floating aling-bottom">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>1</option>
+                              <option value="1">2</option>
+                              <option value="2">3</option>
+                              <option value="3">4</option>
+                            </select>
+                            <label for="floatingSelect"><h6>Talle</h6></label>
+                          </div>
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Negro</option>
+                              <option value="1">Rojo</option>
+                              <option value="2">Gris</option>
+                              <option value="3">Verde</option>
+                            </select>
+                            <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                                <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                              </svg></label>
+                        </div>
+                        <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                          </svg></a>
+                        <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                     </div>
                 </div>
         </div>
@@ -300,8 +519,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -318,8 +559,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -336,8 +599,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
          </div>
@@ -354,8 +639,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -372,8 +679,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -390,8 +719,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -415,8 +766,30 @@
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                        <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                        <div class="form-floating aling-bottom">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>1</option>
+                              <option value="1">2</option>
+                              <option value="2">3</option>
+                              <option value="3">4</option>
+                            </select>
+                            <label for="floatingSelect"><h6>Talle</h6></label>
+                          </div>
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Negro</option>
+                              <option value="1">Rojo</option>
+                              <option value="2">Gris</option>
+                              <option value="3">Verde</option>
+                            </select>
+                            <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                                <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                              </svg></label>
+                        </div>
+                        <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                          </svg></a>
+                        <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                     </div>
                 </div>
         </div>
@@ -433,8 +806,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -451,8 +846,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -469,8 +886,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -487,8 +926,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -505,8 +966,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -523,8 +1006,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -541,8 +1046,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -566,8 +1093,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -584,8 +1133,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -602,8 +1173,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -620,8 +1213,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -638,8 +1253,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -656,8 +1293,70 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="./Img/musculosaespejo.jpg" alt="Musculosa Espejo" style="height: 250px; width: 230px;">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h5 class="card-title">Musculosa espejo fruncida</h5>
+                    <h6 class="card-text">Modal viscosa - Talle único - Varios colores.</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$2300.00</h6><h6 class="text-muted ml-2"><del>$2500.00</del></h6>
+                    </div>
+                </div>
+                <div class="card-footer vh-auto d-flex justify-content-center bg-light border aling-bottom">
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
+                    </div>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -674,26 +1373,30 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-            <div class="card product-item border-0 mb-4">
-                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                    <img class="img-fluid w-100" src="./Img/musculosaespejo.jpg" alt="Musculosa Espejo" style="height: 250px; width: 230px;">
-                </div>
-                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                    <h5 class="card-title">Musculosa espejo fruncida</h5>
-                    <h6 class="card-text">Modal viscosa - Talle único - Varios colores.</h6>
-                    <div class="d-flex justify-content-center">
-                        <h6>$2300.00</h6><h6 class="text-muted ml-2"><del>$2500.00</del></h6>
+                    <div class="form-floating aling-bottom">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                        <label for="floatingSelect"><h6>Talle</h6></label>
+                      </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Negro</option>
+                          <option value="1">Rojo</option>
+                          <option value="2">Gris</option>
+                          <option value="3">Verde</option>
+                        </select>
+                        <label for="floatingSelect"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-palette-fill" aling="text-bottom">
+                            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg></label>
                     </div>
-                </div>
-                <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-light"><i class="fas fa-eye text-primary mr-1"></i>Añadir al carrito</a>
-                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success"><i class="fas fa-shopping-cart text-primary mr-1"></i>Comprar</a>
+                    <a href="#" class="btn btn-light sm-bottom"><i class="fas fa-eye text-primary mr-1"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg></a>
+                    <a href="https://mpago.la/2MGLs2s" class="btn btn-success">Comprar</a> 
                 </div>
             </div>
         </div>
@@ -709,4 +1412,5 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./script.js"></script>
+
 </html>
