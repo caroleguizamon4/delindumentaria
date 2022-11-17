@@ -6,9 +6,10 @@ font-family: 'Bebas Neue', cursive;
     color: black;
     justify-items: center;
     align-items: center;
-    text-align: center;
+    text-align: center;    
     
     }
+
 .carousel-inner{
     height: 20rem;
 }
@@ -37,7 +38,7 @@ font-family: 'Bebas Neue', cursive;
 
 .cat-item .cat-img img,
 .product-item .product-img img  {
-    transition: .5s;
+    transition: .4s;
 }
 
 .cat-item:hover .cat-img img,
